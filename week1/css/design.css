@@ -4,7 +4,7 @@ body{
 	padding: 0;
 	height: 100%;
 	width: 100%;
-	background: #f1f1f1;
+	background: #B7BEC0;
 	color: #4a4a4a;
 	font-family: sans-serif;
 }
@@ -19,7 +19,7 @@ section{
 
 .sub-title{
 	font-size: 18px;
-	border: 1px solid #666666;
+	border: 1px solid #1196C4;
 	padding:0 0 5px 0;
 }
 
@@ -32,4 +32,10 @@ section{
 	display: inline-block;
 	width: 100px;
 	font-weight: bold;
+}
+.img-block{
+	position: absolute;
+	top:15px;
+	right: 20px;
+	border-radius: 20px 10px 20px 10px;
 }
