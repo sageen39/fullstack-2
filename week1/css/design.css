@@ -1,0 +1,35 @@
+body{
+	/* margin: top right bottom left */
+	margin: 20px 40px 20px 10px;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background: #f1f1f1;
+	color: #4a4a4a;
+	font-family: sans-serif;
+}
+
+.title{
+	text-align:center;
+}
+
+section{
+	padding: 15px 15px;
+}
+
+.sub-title{
+	font-size: 18px;
+	border: 1px solid #666666;
+	padding:0 0 5px 0;
+}
+
+#personal_info .info{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#personal_info label{
+	display: inline-block;
+	width: 100px;
+	font-weight: bold;
+}
