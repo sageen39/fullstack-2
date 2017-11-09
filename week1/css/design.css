@@ -43,3 +43,11 @@ section{
 	right: 20px;
 	border-radius: 20px 10px 20px 10px;
 }
+
+footer {
+    font-family: verdana;
+    font-size: 12px;
+    padding:15px 0 2px 0;
+    font-style: italic;
+    text-align: center;
+}
