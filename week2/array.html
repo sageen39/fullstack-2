@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<body>
+	<h1>Array Demo</h1>
+	<p id="Demo">value is set by Js script</p>
+	<script type="text/javascript">
+
+		var fruits = ["mango","apple","orange","banana"];
+		fruits.sort();
+
+		document.getElementById('Demo').innerHTML = fruits;
+
+		for (var i = fruits.length-1; i >=0; i--) {
+			console.log('fruit->',fruits[i]);
+		}
+
+
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object</title>
+</head>
+<body>
+	<h1>Object Demo</h1>
+	<div id="name"></div>
+	<div id="color"></div>
+	<div id="type"></div>
+	<div id="weight"></div>
+	<script type="text/javascript">
+		var apple ={
+			name: "swyau",
+			color:"red",
+			type:"fruit",
+			weight:50,
+
+			giveVitamin: function(){
+				console.log("Giving vitamin A....")
+			}
+		}
+		apple.color="yellow"
+		console.log(apple.color)
+		apple.giveVitamin()
+
+		document.getElementById('name').innerHTML = apple.name;
+		document.getElementById('color').innerHTML = apple.color;
+		document.getElementById('type').innerHTML = apple.typea;
+		document.getElementById('weight').innerHTML = apple.weight;
+
+
+
+	</script>
+</body>
+</html>

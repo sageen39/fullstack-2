@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leads</title>
+</head>
+<body>
+
+	
+	<h1>Leads:</h1>
+	<h4>FirstName---LastName---CompanyName---Position---IsEmailValid</h4>
+	<div id="leads"></div>
+
+	<script src = "http://code.jquery.com/jquery-1.12.4.min.js">
+		
+
+	</script>
+
+
+	<script>
+		var leads =[
+			{
+				firstName:"Sageen",
+				lastName:"Suwal",
+				companyName:"FuseMachines",
+				position:"Software Developer",
+				email:"sageen@fusemachines.com"
+			},
+						{
+				firstName:"Rajesh",
+				lastName:"Hamal",
+				companyName:"Film Industry",
+				position:"Antagonist",
+				email:null
+			}
+		]
+
+		//display leads on the page using loop
+
+		leads.forEach(function(lead){
+
+			$('#leads').append('<p>'+ 
+				lead.firstName +' --- '+
+				lead.lastName+' --- '+
+				lead.companyName+' --- '+
+				lead.position+'---'+
+				isValid(lead.email)+'</p>');
+		})
+
+		function isValid(email){
+			if(email){
+				return "Valid";
+			}
+			else{
+				return "Invalid";
+			}
+		}
+	</script>
+
+</body>
+</html>
