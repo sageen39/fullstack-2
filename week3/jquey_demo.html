@@ -2,13 +2,54 @@
 <html>
 <head>
 	<title>
-		My Web Page
+		Intro to Jquery
 	</title>
+	<style type="text/css">
+
+	body{
+		padding: 50px;
+		background: #ccc;
+	}
+		.comment{
+			background:#eee;
+			padding:10px;
+		}
+		.comment input, textarea{
+			width:100%;
+			margin-bottom: 10px;
+		}
+		.comment button{
+			background: green;
+			border: 1px solid green;
+			color:#fff;
+		}
+	</style>
 </head>
 <body>
-<h1>My Web Page</h1>
+<div class="comment">
+<input id="name" placeholder="name"/>
+<textarea id="comment" placeholder="comment" rows="4"></textarea>
+<button id="post">Post</button>
+	
+</div>
+
+<div class="comment-section">
+
+</div>
 <footer>
-	<script src="jquery.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+
+			$("#post").click(function(){
+			let name = $('#name').val();
+			let comment = $('#comment').val();
+			let commentSection = $('<p>'+name+'</p><p>'+comment+'</p>');
+			$(".comment-section").append(commentSection);
+			});
+		});	
+		
+	</script>
 
 </footer>
 </body>
